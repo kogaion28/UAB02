@@ -1,5 +1,10 @@
+# Parte clientului 
+
+
+
+#Librari
 import socket 
-import argparse
+import argparse #Pentru linile de comanda si subcomenzi
 
 parser = argparse.ArgumentParser(description = "Acest client este pe server!")
 parser.add_argument('--host', metavar = 'host', type = str, nargs = '?', default = socket.gethostname())
