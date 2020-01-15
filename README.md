@@ -8,9 +8,11 @@ Aplicatia poate avea un numar mare de clienti care sa comunice pe acelasi server
 Tehnologia folosite este Python 
 
 Aplicatia poate fi rulata pe windows (folosind cmd si avand instalat python) si linux (folosind terminalul) 
-Rularea programului se face prin executatrea primatata a serverului ($python3 server.py) si dupa a clientuli(python3 client.py)
+Rularea programului se face prin executatrea  serverului ($python3 server.py) si dupa a clientuli(python3 client.py)
 
 
 Bibliografie:
-https://www.python.org/doc/
-https://www.youtube.com/watch?time_continue=775&v=E2fbTjc7b0A&feature=emb_title
+https://www.python.org/doc/ --->> pt. biblioteci si functii
+
+![](poza.png)
+
