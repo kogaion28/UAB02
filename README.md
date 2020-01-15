@@ -12,5 +12,7 @@ Rularea programului se face prin executatrea  serverului ($python3 server.py) si
 
 
 Bibliografie:
-https://www.python.org/doc/ --->> pt. biblioteci si functi
+https://www.python.org/doc/ --->> pt. biblioteci si functii
+
+![](poza.png)
 
