@@ -1,4 +1,4 @@
-# proiect-ICLP-Jude Bogdan Laurentiu
+# Jude Bogdan Laurentiu---->>aplicatie--->> mesaje-UDP-server-client
 Aplicatie pentru chat in Python(care contine si thread-uri)
 
 Autor: Jude Bogdan Laurentiu UAB
