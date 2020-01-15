@@ -37,12 +37,12 @@ def on_new_client(client, connection):#argumete cliente si connection pentru cli
 		client.sendall(reply.encode('utf-8'))	#functia are asteptari de biti nu string de aia punem encod
 	print(f"Clientul de la ip-ul : {ip}, si portul: {port}, sa deconectat!") # deconectarea clientului --->>>>>
 	
-	client.close()
+	client.close() #incide obiectul client
 
 while True:
 	try: 
 		client, ip = sck.accept()
-		threading._start_new_thread(on_new_client,(client, ip))
+		threading._start_new_thread(on_new_client,(client, ip))#threading pentru a deschide mai multi clienti
 		
 	except KeyboardInterrupt:
 		print(f"Inchidere server!")
