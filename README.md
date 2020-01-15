@@ -13,3 +13,4 @@ Rularea programului se face prin executatrea primatata a serverului ($python3 se
 
 Bibliografie:
 https://www.python.org/doc/
+https://www.youtube.com/watch?time_continue=775&v=E2fbTjc7b0A&feature=emb_title
