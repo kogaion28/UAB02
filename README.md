@@ -1,4 +1,4 @@
-# proiect-ICLP
+# proiect-ICLP-Jude Bogdan Laurentiu
 Aplicatie pentru chat in Python(care contine si thread-uri)
 
 Autor: Jude Bogdan Laurentiu UAB
