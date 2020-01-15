@@ -7,7 +7,7 @@ import argparse #Pentru linile de comanda si subcomenzi
 import threading 
 
 parser = argparse.ArgumentParser(description = "Acesta este servarul!")
-parser.add_argument('--host', metavar = 'host', type = str, nargs = '?', default = socket.gethostname())
+parser.add_argument('--host', metavar = 'host', type = str, nargs = '?', default = socket.gethostname())# vom da la host o metavariabila 'host' va avea tipul string vom da un nr de argumente "?"" si ca default este socket
 parser.add_argument('--port', metavar = 'port', type = int, nargs = '?', default = 9999)
 args = parser.parse_args()
 
@@ -35,8 +35,8 @@ def on_new_client(client, connection):#argumete cliente si connection pentru cli
 		print(f"Clientul a spus: {msg.decode()}")
 		reply = f"Tu ai spus: {msg.decode()}"
 		client.sendall(reply.encode('utf-8'))	#functia are asteptari de biti nu string de aia punem encod
-	print(f"Clientul de la ip-ul : {ip}, si portul: {port}, sa deconectat!")
-	threading
+	print(f"Clientul de la ip-ul : {ip}, si portul: {port}, sa deconectat!") # deconectarea clientului --->>>>>
+	
 	client.close()
 
 while True:
