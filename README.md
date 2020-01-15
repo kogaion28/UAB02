@@ -1,4 +1,4 @@
-# Jude Bogdan Laurentiu---->>aplicatie--->> mesaje-UDP-server-client
+# Jude Bogdan Laurentiu-aplicatie--> mesaje-server-client
 Aplicatie pentru chat in Python(care contine si thread-uri)
 
 Autor: Jude Bogdan Laurentiu UAB
