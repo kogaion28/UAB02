@@ -1,6 +1,7 @@
 
 #Librari
 
+import time
 import socket
 import argparse #Pentru linile de comanda si subcomenzi
 import threading 
@@ -26,23 +27,27 @@ def on_new_client(client, connection):#argumete cliente si connection pentru cli
 	ip = connection[0]
 	port = connection[1]
 	print(f"Noua conexiune a fost facuta de la  {ip}, si portul: {port}!")
+	
 	while True:
 		msg = client.recv(1024)
-		if msg.decode() == 'exit':
+		if msg.decode() == 'iesi':
 			break
 		print(f"Clientul a spus: {msg.decode()}")
 		reply = f"Tu ai spus: {msg.decode()}"
-		client.sendall(reply.encode('utf-8'))
+		client.sendall(reply.encode('utf-8'))	#functia are asteptari de biti nu string de aia punem encod
 	print(f"Clientul de la ip-ul : {ip}, si portul: {port}, sa deconectat!")
+	threading
 	client.close()
 
 while True:
 	try: 
 		client, ip = sck.accept()
 		threading._start_new_thread(on_new_client,(client, ip))
+		
 	except KeyboardInterrupt:
 		print(f"Inchidere server!")
 	except Exception as e:
 		print(f"Nu am aticipat asta: {e}")
-
+		
+		
 sck.close()
